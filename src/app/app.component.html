@@ -25,12 +25,11 @@
 <h1 class="text-3xl font-bold text-center">
   {{title}}
 </h1>
-<div class="container mx-auto">
+<div class="mx-auto flex flex-col h-screen">
   <router-outlet></router-outlet>
+  <footer class="h-10 footer bg-blue-500 text-center my-10">
+    <div class="my-5">
+      <span>All Rights Reserved 2023 @237Fact</span>
+    </div>
+  </footer>
 </div>
-
-<footer class="footer bg-blue-500 text-center">
-  <div class="container my-5">
-    <span>All Rights Reserved 2023 @237Fact</span>
-  </div>
-</footer>

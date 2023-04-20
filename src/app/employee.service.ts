@@ -21,8 +21,13 @@ export class EmployeeService {
   }
 
   getEmployeeById(id:number):Observable<Employee>{
+<<<<<<< HEAD
     return this.httpClient.get<Employee>(`${this.baseURL}/${id}`);
     console.log(`${this.baseURL}/${id}`);
+=======
+    console.log(`${this.baseURL}/${id}`);
+    return this.httpClient.get<Employee>(`${this.baseURL}/${id}`);
+>>>>>>> 05-updateEmployee
   }
 
   updateEmployee(id:number, employee:Employee){

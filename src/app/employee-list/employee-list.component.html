@@ -5,6 +5,7 @@
             <th scope="col" class="p-2">First Name</th>
             <th scope="col" class="p-2">Last Name</th>
             <th scope="col" class="p-2">emailId ID</th>
+            <th scope="col" class="p-2">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -12,6 +13,10 @@
             <td class="py-4">{{employee.firstName}}</td>
             <td class="py-4">{{employee.lastName}}</td>
             <td class="py-4">{{employee.emailId}}</td>
+            <td class="py-4">
+                <button (click)="updateEmployee(employee.id)"
+                    class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Update</button>
+            </td>
         </tr>
     </tbody>
 </table>
